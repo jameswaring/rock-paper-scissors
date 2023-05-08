@@ -4,12 +4,9 @@ function getComputerChoice(){
     return randomSelection
 }
 
-function getUserChoice(){
-    items = ["Rock", "Paper", "Scissors"]
-    userInput = prompt()
-    if(items.includes(userInput) == true){
-        console.log("Found")
-    }
+function rockSelect(){
+    const paper = document.getElementById("paper")
+    paper.classList.add("opaque")
+    const scissors = document.getElementById("scissors")
+    scissors.classList.add("opaque")
 }
-
-getUserChoice()

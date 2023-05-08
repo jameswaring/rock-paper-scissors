@@ -20,3 +20,11 @@ h1{
     justify-content: center;
     gap: 50px;
 }
+
+#user-pic-box{
+    display: flex;
+}
+
+.opaque{
+    opacity: 0.2;
+}
