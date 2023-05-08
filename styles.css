@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+
+.mainholder{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.userBox{
+
+}
+
+.compBox{
+
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
