@@ -26,6 +26,9 @@ function getComputerChoice(userChoice){
     else if(strippedSelection == "paper" && userChoice == "rock"){
         lose()
     }
+    else if(strippedSelection == "paper" && userChoice == "scissors"){
+        win()
+    }
 }
 
 function rockSelect(){
