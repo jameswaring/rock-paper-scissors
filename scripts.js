@@ -29,6 +29,9 @@ function getComputerChoice(userChoice){
     else if(strippedSelection == "paper" && userChoice == "scissors"){
         win()
     }
+    setTimeout(() => {
+        compPic.src = ""
+      }, 2000)
 }
 
 function rockSelect(){
@@ -66,6 +69,9 @@ function paperSelect(){
 
 function win(){
     document.getElementById("thisround").innerHTML = "WIN!"
+    let score = parseInt(document.getElementById("scoreLabel").innerHTML)
+    score++;
+    document.getElementById("scoreLabel").innerHTML = score
 }
 
 function lose(){
