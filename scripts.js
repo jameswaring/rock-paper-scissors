@@ -37,6 +37,9 @@ function rockSelect(){
     const scissors = document.getElementById("scissors")
     scissors.classList.add("opaque")
     getComputerChoice("rock")
+    setTimeout(() => {
+        reset()
+      }, 2000)
 }
 
 function scissorsSelect(){
@@ -45,6 +48,9 @@ function scissorsSelect(){
     const rock = document.getElementById("rock")
     rock.classList.add("opaque")
     getComputerChoice("scissors")
+    setTimeout(() => {
+        reset()
+      }, 2000)
 }
 
 function paperSelect(){
@@ -53,6 +59,9 @@ function paperSelect(){
     const scissors = document.getElementById("scissors")
     scissors.classList.add("opaque")
     getComputerChoice("paper")
+    setTimeout(() => {
+        reset()
+      }, 2000)
 }
 
 function win(){
@@ -65,4 +74,13 @@ function lose(){
 
 function tie(){
     document.getElementById("thisround").innerHTML = "TIE!"
+}
+
+function reset(){
+    const rock = document.getElementById("rock")
+    const paper = document.getElementById("paper")
+    const scissors = document.getElementById("scissors")
+    rock.classList.remove("opaque")
+    scissors.classList.remove("opaque")
+    paper.classList.remove("opaque")
 }
