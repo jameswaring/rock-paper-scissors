@@ -6,24 +6,26 @@
         <title>Rock Paper Scissors</title>
     </head>
     <body>
-        <h1>Make Your Choice</h1>
-        <div class="mainholder">
-            <div class="userbox">
-                <h2>Your Choice</h2>
-                <div id="user-pic-box">
-                    <img src="rock.png" id="rock" width="100px" onclick="rockSelect()">
-                    <img src="paper.png" id="paper" width="100px" onclick="paperSelect()">
-                    <img src="scissors.png" id="scissors" width="100px" onclick="scissorsSelect()">
+        <div id="wrapper">
+            <h1>Make Your Choice</h1>
+            <div class="mainholder">
+                <div class="userbox">
+                    <h2>Your Choice</h2>
+                    <div id="user-pic-box">
+                        <img src="rock.png" id="rock" width="100px" onclick="rockSelect()">
+                        <img src="paper.png" id="paper" width="100px" onclick="paperSelect()">
+                        <img src="scissors.png" id="scissors" width="100px" onclick="scissorsSelect()">
+                    </div>
+                </div>
+                <div class="compbox">
+                    <h2>Computer's Choice</h2>
+                    <img src="" id="compPic" width="100px">
                 </div>
             </div>
-            <div class="compbox">
-                <h2>Computer's Choice</h2>
-                <img src="" id="compPic" width="100px">
-            </div>
-        </div>
         <div class="result">
             <div id="thisround">Lose</div>
             <div id="scoreLabel">1</div>
         </div>
+    </div>
     </body>
 </html>
