@@ -29,9 +29,6 @@ function getComputerChoice(userChoice){
     else if(strippedSelection == "paper" && userChoice == "scissors"){
         win()
     }
-    setTimeout(() => {
-        compPic.src = ""
-      }, 2000)
 }
 
 function rockSelect(){
@@ -40,9 +37,6 @@ function rockSelect(){
     const scissors = document.getElementById("scissors")
     scissors.classList.add("opaque")
     getComputerChoice("rock")
-    setTimeout(() => {
-        reset()
-      }, 2000)
 }
 
 function scissorsSelect(){
@@ -51,9 +45,6 @@ function scissorsSelect(){
     const rock = document.getElementById("rock")
     rock.classList.add("opaque")
     getComputerChoice("scissors")
-    setTimeout(() => {
-        reset()
-      }, 2000)
 }
 
 function paperSelect(){
@@ -62,24 +53,30 @@ function paperSelect(){
     const scissors = document.getElementById("scissors")
     scissors.classList.add("opaque")
     getComputerChoice("paper")
+}
+
+function win(){
+    document.getElementById("thisround").innerHTML = "WIN!"
+    let score = parseInt(document.getElementById("winlose").innerHTML)
+    score++;
+    document.getElementById("winlose").innerHTML = score
     setTimeout(() => {
         reset()
       }, 2000)
 }
 
-function win(){
-    document.getElementById("thisround").innerHTML = "WIN!"
-    let score = parseInt(document.getElementById("scoreLabel").innerHTML)
-    score++;
-    document.getElementById("scoreLabel").innerHTML = score
-}
-
 function lose(){
     document.getElementById("thisround").innerHTML = "LOSE!"
+    setTimeout(() => {
+        reset()
+      }, 2000)
 }
 
 function tie(){
     document.getElementById("thisround").innerHTML = "TIE!"
+    setTimeout(() => {
+        reset()
+      }, 2000)
 }
 
 function reset(){
