@@ -47,6 +47,11 @@ h1{
     display: flex;
 }
 
+#user-pic-box > img:hover{
+    transition: .5s ease;
+    opacity: 0.2;
+}
+
 .opaque{
     opacity: 0.2;
 }
